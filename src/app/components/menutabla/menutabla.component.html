@@ -1,0 +1,9 @@
+<div>
+    <button (click)="generarNumAleatorio()">Añadir Link Tabla Multiplicar Aleatoria</button>
+  
+    <ul id="menu">
+      <li *ngFor="let num of numerosAleatorios">
+        <a [routerLink]="['/tablamultiplicar', num]">Tabla Multiplicar {{ num }}</a> |
+      </li>
+    </ul>
+  </div>
